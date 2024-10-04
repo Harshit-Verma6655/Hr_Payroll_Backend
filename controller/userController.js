@@ -8,11 +8,11 @@ const registerUser = async (req, res) => {
 
   try {
 
-    const userExists = await UserModel.findOne({ email });
+    // const userExists = await UserModel.findOne({ email });
 
-    if (userExists) {
-      return res.status(400).json({ message: 'User already exists' });
-    }
+    // if (userExists) {
+    //   return res.status(400).json({ message: 'User already exists' });
+    // }
 
     const user = new UserModel({
       email,
